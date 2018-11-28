@@ -1,0 +1,185 @@
+﻿Whirl-Wars: Game Design Document
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tom Boudwin
+Justin DeSimone
+
+
+
+
+
+
+
+
+
+
+November 27, 2018
+________________
+Table of Contents
+
+
+1. Introduction …………………………………………………………………………… 3
+2. Target System and Development Software…………………………………………3
+3. Specifications…………………………………………………………………………..3
+   1. Concept…………………………………………………………………………3
+   2. Game Structure………………………………………………………………..3
+   3. Players……………………………………………………………………….....3
+   4. Action……………………………………………………………………………3
+   5. Objective………………………………………………………………………..4
+   6. Graphics………………………………………………………………………..4
+1. Gameplay……………………………………………………………………………….4
+   1. Arenas..………………………………………………………………………….4
+   2. Landscape………………………………………………………………………4
+   3. Object Types……………………………………………………………………4
+   4. Controls………………………………………………………………………….4
+   5. Physics………………………………………………………………………….5
+   6. Scoring………………………………………………………………………….5
+1. Front End……………………………………………………………………………….5
+   1. Start Screen…………………………………………………………………….5
+   2. Character Select Screen……………………………….……………………..5
+   3. Results Screen…………………………………………………………………5
+1. Team…………………………………………………………………………………….5
+
+
+
+
+________________
+
+
+1. Introduction
+
+
+This document specifies a design for the gameplay of a game with the provisional title “Whirl-Wars”. It is based on elements discussed in mostly one meeting involving Tom Boudwin and Justin DeSimone.
+
+
+2. Target System and Development Software
+
+
+“Whirl-Wars” will be produced in a WebGL format. “Whirl-Wars” will be developed using the Unity Game Engine, Visual Studio, and Fusion360.
+
+
+3. Specifications
+
+
+3.a. Concept
+
+
+The aim of “Whirl-Wars” is to produce a fun, competitive, and clean-looking game in which two players will select a “top” to battle one on one in an arena. The victor is the last one spinning or the last one remaining in the arena
+
+
+3.b. Game Structure
+
+
+The game starts with two players picking their specialized tops to fight with. The game will consist of three arenas which can be selected after the tops. Then the players will fight to see who emerges the victor.
+
+
+3.c. Players
+
+
+There will be two players going head to head, each controlling their own top.
+
+
+3.d. Action
+
+
+Players will have control of their ball and possibly the speed at which they start. They will move their object around the arena trying to knock the other player’s object out, or stopping its spin.
+
+
+
+
+
+
+3.e. Objective
+
+
+The objective is to be the last one moving or be the only one still in the arena if other player is knocked out.
+
+
+3.f. Graphics
+
+
+The arenas will be viewed from above at a slight angle, between a pure top-down perspective and an isometric view. The arena will generally consist of a solid circular shape with walls. The camera will be a fixed view of the arena, allowing both players to see their “character”. A skybox will also be present for each arena.
+
+
+4. Gameplay
+
+
+4.a. Arenas
+
+
+One basic arena with low to no walls that is easier to knock players out of the arena. One cage-match style arena with hazards which the player will have to avoid while taking down opponent. And last, one where the arena is tilting so players have to fight gravity while fighting each other.
+
+
+4.b. Landscape
+
+
+The arenas will float in space with a dynamic background matching the mood of each arena theme. Lighter for the basic, intense for the cage match, and suspenseful for the arena tilting level
+
+
+4.c. Object Types
+
+
+Objects in this game will be: the player “characters” (or tops), arenas, and hazards.
+
+
+4.d. Controls
+
+
+The player will have control of their top and possibly the starting velocity before the proper round begins.
+
+
+
+
+
+
+4.e. Physics
+
+
+Physics are at the core of “Whirl-Wars”, as colliding the tops is the main gameplay element. The tops will have colliders that obviously interact with each other, sending them bouncing in a direction, and they will also of course collide with the arena and its boundaries (if applicable).
+
+
+4.f. Scoring
+
+
+“Whirl-Wars” will have a straightforward scoring system. Each match is best of 5. Winning a round earns the player a point - the first to reach 3 points wins the match, prompting the results screen.
+
+
+5. Front End
+
+
+5.a. Start Screen
+
+
+The start screen will be a flashy graphic until one of the players presses a key to go to the character select screen.
+
+
+5.b. Character Select Screen
+
+
+Both players will have the opportunity to select their own top from a small collection of custom models.
+
+
+5.c. Results Screen
+
+
+This screen will proclaim the winner in an attractive way and ask the players if they would like to rematch, or choose new tops. It will show the match score as well. 
+
+
+6. Team
+
+
+Lead Programmers: Tom Boudwin and Justin DeSimone
